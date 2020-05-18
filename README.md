@@ -3,4 +3,4 @@
 # Зорина Оксана
 Мои первые работы
 
-[Сайт по стилю](savva21.github.io/style_site/index_roxyvill.html)
+[Урок 12](savva21.github.io/lesson_12_glo)
