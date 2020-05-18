@@ -1,0 +1,23 @@
+.header {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 20px;
+}
+.header span {
+  display: block;
+}
+.header:hover {
+  background-color: #000000;
+}
+.header {
+  font-size: 15px;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+.section-header {
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  color: blue;
+  background-color: #333333;
+}
