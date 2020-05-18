@@ -1,0 +1,642 @@
+body {
+    padding:0;
+    margin:0;
+    font-family: 'Open Sans', arial;
+}
+.top_wrap {
+    display:flex;   
+}
+.left_header {   
+border-right:0.5px solid #dfdfdf;
+display:flex;
+align-items:center;
+padding-left: 30px;
+height:75px;
+width:75%;
+margin: 0 auto;
+}
+.menu {
+    display: flex;
+    align-items:center;
+    position: relative;
+    border-bottom:1px solid #dfdfdf;  
+}
+.menu nav > ul {
+    display: flex;
+    height:50px;
+}
+.menu nav > ul li {
+    display: flex;
+    align-items:center;
+    list-style-type: none; /*отменяет маркеры для списка*/
+    padding: 0 50px 0 0;   /*внутренний отступ*/
+}
+.menu nav > ul li a {
+    text-decoration: none;
+    color:#000;
+    font-size: 1.3vw;
+}
+.menu .submenu1 li a:hover {
+    text-decoration: underline;
+}
+.menu .li_1:hover .submenu1 {
+    display: block; /*Элемент становится блочным*/
+}
+.li_1 {
+    position: relative;
+}
+.menu .submenu1 {
+    display:none;
+    position: absolute;
+    width:150px;
+    padding:10px;
+    z-index: 1;
+    border-radius:10px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.5);
+    top:40px;
+}
+.menu .submenu2 li a:hover {
+    text-decoration: underline;
+}
+.menu .li_2:hover .submenu2 {
+    display: block; /*Элемент становится блочным*/
+}
+.li_2 {
+    position: relative;
+}
+.menu .submenu2 {
+    display:none;
+    position: absolute;
+    width:150px;
+    padding:10px;
+    z-index: 1;
+    border-radius:10px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.5);
+    top:40px;
+}
+.menu .submenu3 li a:hover {
+    text-decoration: underline;
+}
+.menu .li_3:hover .submenu3 {
+    display: block; /*Элемент становится блочным*/
+}
+.li_3 {
+    position: relative;
+}
+.menu .submenu3 {
+    display:none;
+    position: absolute;
+    width:150px;
+    padding:10px;
+    z-index: 1;
+    border-radius:10px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.5);
+    top:40px;
+}
+.menu .cloth:hover .submenu3_1 {
+    display: block;
+}
+.cloth {
+    position: relative;
+}
+.submenu3_1 {
+    display:none;
+    position: absolute;
+    width:150px;
+    padding:10px;
+    z-index: 1;
+    border-radius:10px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.5);
+    top:5px;
+    margin-left: 150px;
+}
+.menu .li_4:hover .submenu3_1_1 {
+    display: block;
+}
+.li_4 {
+    position: relative;
+}
+.menu .submenu3_1_1 {
+    display:none;
+    position: absolute;
+    width:210px;
+    padding:10px;
+    z-index: 1;
+    border-radius:10px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.5);
+    top:5px;
+    margin-left: 140px;
+}
+.menu .li_5:hover .submenu3_1_2 {
+    display: block;
+}
+.li_5 {
+    position: relative;
+}
+.menu .submenu3_1_2 {
+    display:none;
+    position: absolute;
+    width:210px;
+    padding:10px;
+    z-index: 1;
+    border-radius:10px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.5);
+    top:5px;
+    margin-left: 140px;
+}
+.menu .li_6:hover .submenu3_1_3 {
+    display: block;
+}
+.li_6 {
+    position: relative;
+}
+.menu .submenu3_1_3 {
+    display:none;
+    position: absolute;
+    width:260px;
+    padding:10px;
+    z-index: 1;
+    border-radius:10px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.5);
+    top:5px;
+    margin-left: 140px;
+}
+.menu .shoes:hover .submenu3_2 {
+    display: block;
+}
+.shoes {
+    position: relative;
+}
+.menu .submenu3_2 {
+    display:none;
+    position: absolute;
+    width:100px;
+    text-align: left;
+    padding:10px;
+    z-index: 1;
+    border-radius:10px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.5);
+    top:5px;
+    margin-left: 120px;
+}
+
+.right_header {
+    display: flex;
+    align-items:center;
+    height:75px;
+    width:25%;
+    margin: 0 auto;
+    padding-left: 10px;
+}
+div .icons {
+    padding-right: 20px;
+    
+}
+div .icons > a {
+    padding: 10px 10px 0 10px;
+    color: #52B6FF;
+    
+}
+.right_header form input {
+    border-radius:4px;
+    border:1px solid #dcdcdc;
+    outline:0;
+    padding:5px;
+}
+.right_header form button {
+    border:none;
+    background: none;
+    outline:0; /*отменяет границы на всех сторонах*/
+    cursor:pointer;
+}
+   /*Баннер со слайдером*/
+
+.banner .slider {
+    display: flex;
+    align-items:center;
+    position: relative;
+}
+.banner .slider .arrow_left {
+    background: url("../images/alb.png") no-repeat center center;
+    width:48px;
+    height:48px;
+    position: absolute;
+    left:20px;
+    cursor:pointer;
+}
+.banner .slider .arrow_right {
+    background: url("../images/arb.png") no-repeat center center;
+    width:48px;
+    height:48px;
+    position: absolute;
+    right:20px;
+    cursor:pointer;
+} 
+
+.banner .slider .photo {
+    height:350px;
+    flex-basis:100%;
+    background: url("../images/slider.jpg") no-repeat center bottom/cover; 
+}
+.banner .slider .photo p {
+    color: #D9E5F4;
+    text-shadow: 0px 2px 3px rgba(0,0,0,0.5) ;
+    border-radius: 5px;
+    background: linear-gradient(#000,#52B6FF);
+    display: inline-block;
+    position: absolute;
+    padding:10px;
+    bottom:0px;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+.slider_switch {
+    text-align: center;
+    margin-top:10px;
+}
+.slider_switch span {
+    display: inline-block;
+    width:10px;
+    height:10px;
+    border-radius:100%;
+    border:2px solid #000;
+    cursor:pointer;
+}
+.slider_switch .active {
+    background: #52B6FF;
+}
+/*Блок контент - новое и блоки*/
+.content {
+    
+    width:90%;
+    display: flex;
+    justify-content:space-between;
+    margin: 0 auto;
+}
+section {
+    flex-basis:27%;
+}
+section h2 {
+    border-left:5px solid #52B6FF;
+    padding-left:15px; 
+}
+article {
+    justify-content:space-around;
+    align-items:center;
+    margin:5px 0;
+}
+article img {
+    border-radius:5%; /*Закругление картинки*/
+    
+}
+article p {
+    flex-basis:80%; /*Ширина текста*/
+    padding-left: 10px;
+    color:#52B6FF ;
+}
+aside {
+    background: url("../images/aside.jpg") no-repeat center top/cover;
+    width: 300px;
+    height:400px;
+    border-radius:5%; /*Закругление картинки*/
+    position: relative;
+}
+aside p {
+    position: absolute;
+    right:10px;
+    bottom:10px;
+    background: linear-gradient(#000,#52B6FF);
+    padding:10px;
+    margin:0;
+    color: #D9E5F4;
+    text-shadow: 0px 2px 3px rgba(0,0,0,0.5) ;
+    border-radius: 5px;
+}
+/* Блок с услугами */
+.content .right {
+    flex-basis:70%;
+    margin-top: 25px;
+}
+.wrap_title {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap:wrap; /*переносит то, что не влезает*/
+}
+.wrap_title img {
+    width:100%;
+    border-radius: 5%;
+}
+/* Контейнер с услугой */
+.wrap_title .title {
+    flex-basis:30%;
+    margin-bottom:25px;
+    position: relative;
+}
+.wrap_title .title:hover .icons {
+    display: block;
+}
+.wrap_title .icons {
+    position: absolute;
+    padding:5px;
+    display: none;
+}
+.wrap_title .icons span {
+    display: inline-block;
+    font-size: 18px;
+    color:#919191;
+    border-radius:100%;
+    background: rgba(255,255,255,0.8);
+    padding: 5px 8px;
+    border:1px solid;
+    cursor:pointer; /*при наведении меняется значок мышки*/
+}
+.wrap_title .icons span:hover {
+    background:linear-gradient(#000,#52B6FF);
+}
+.wrap_title p {
+    font-size: 14px;
+}
+.wrap_title p:nth-of-type(1) {
+    color: #595858;
+    font-weight: bold;
+}
+.wrap_title p:nth-of-type(2) {
+    color:#8d8d8d;
+}
+.wrap_title .title .bottom {
+    border-top:1px solid #c9c9c9;
+    border-bottom:1px solid #c9c9c9;
+    display: flex;
+    justify-content:space-between;
+    padding:5px;
+    font-size: 14px;
+}
+.wrap_title .title .bottom span {
+    color:#bab6b6;
+}
+.wrap_title .title .bottom a {
+    color:#52B6FF;
+    text-decoration: none;
+}
+.wrap_title .title .bottom a:hover {
+    text-decoration: underline;
+}
+.pagination {
+    padding-left: 40%;
+    text-align: center;
+}
+.pagination span {
+    display: inline-block; /*строчный эллемент принимает свойства блока*/
+    background: linear-gradient(#000,#52B6FF);
+    color:#fff;
+    width:20px;
+    padding:3px;
+    border-radius:6px;
+    cursor:pointer;
+}
+.pagination span:hover {
+    background:#c9c9c9;
+}
+/*Популярные бренды*/
+div .sprites > div {
+    display: flex;
+}
+.sprites h2 {
+    border-left:5px solid #52B6FF;
+    padding-left:15px; 
+}
+.sprites a {
+    color:#52B6FF;
+    text-decoration: none;
+    padding-left: 15px;
+    padding-top: 30px;
+}
+.sprites a:hover {
+    text-decoration: underline;
+}
+.allicons {
+    display: flex;
+    justify-content:space-between;
+    
+    flex-wrap:wrap; /*переносит то, что не влезает*/
+}
+.icon1 {
+    background:url("../images/sprite.jpg") no-repeat;
+    border:1px solid #52B6FF;
+    width:100px;
+    height: 40px;
+    background-position: -65px -48px;
+    border-radius: 100%;
+    cursor:pointer;
+    margin-top: 20px;
+}
+.icon2 {
+    background:url("../images/sprite1.jpg") no-repeat;
+    border:1px solid #52B6FF;
+    width:100px;
+    height: 40px;
+    background-position: -20px -55px;
+    border-radius: 100%;
+    cursor:pointer;
+    margin-top: 20px;
+}
+.icon3 {
+    background:url("../images/sprite.jpg") no-repeat;
+    border:1px solid #52B6FF;
+    width:100px;
+    height: 40px;
+    background-position: -65px -145px;
+    border-radius: 100%;
+    cursor:pointer;
+    margin-top: 20px;
+}
+.icon4 {
+    background:url("../images/sprite.jpg") no-repeat;
+    border:1px solid #52B6FF;
+    width:100px;
+    height: 40px;
+    background-position: -65px -235px;
+    border-radius: 100%;
+    cursor:pointer;
+    margin-top: 20px;
+}
+.icon5 {
+    background:url("../images/sprite.jpg") no-repeat;
+    border:1px solid #52B6FF;
+    width:100px;
+    height: 40px;
+    background-position: -65px -278px;
+    border-radius: 100%;
+    cursor:pointer;
+    margin-top: 20px;
+}
+.icon6 {
+   
+    background:url("../images/sprite.jpg") no-repeat;
+    border:1px solid #52B6FF;
+    width:100px;
+    height: 40px;
+    background-position: -65px -367px;
+    border-radius: 100%;
+    cursor:pointer;
+    margin-top: 20px;
+}
+.icon7 {
+   
+    background:url("../images/sprite.jpg") no-repeat;
+    border:1px solid #52B6FF;
+    width:100px;
+    height: 40px;
+    background-position: -65px -416px;
+    border-radius: 100%;
+    cursor:pointer;
+    margin-top: 20px;
+}
+.icon8 {
+    background:url("../images/sprite.jpg") no-repeat;
+    border:1px solid #52B6FF;
+    width:100px;
+    height: 40px;
+    background-position: -65px -466px;
+    border-radius: 100%;
+    cursor:pointer;
+    margin-top: 20px;
+}
+.icon9 {
+    background:url("../images/sprite1.jpg") no-repeat;
+    border:1px solid #52B6FF;
+    width:140px;
+    height: 40px;
+    background-position: -10px -110px;
+    border-radius: 100%;
+    margin-top: 20px;
+    cursor:pointer;
+}
+.icon10 {
+    background:url("../images/sprite1.jpg") no-repeat;
+    border:1px solid #52B6FF;
+    width:140px;
+    height: 40px;
+    background-position: -155px -115px;
+    border-radius: 100%;
+    margin-top: 20px;
+    cursor:pointer;
+}
+.icon11 {
+    background:url("../images/sprite1.jpg") no-repeat;
+    border:1px solid #52B6FF;
+    width:100px;
+    height: 40px;
+    background-position: -186px -83px;
+    border-radius: 100%;
+    margin-top: 20px;
+    cursor:pointer;
+}
+.icon12 {
+    background:url("../images/sprite1.jpg") no-repeat;
+    border:1px solid #52B6FF;
+    width:100px;
+    height: 40px;
+    background-position: -103px -83px;
+    border-radius: 100%;
+    margin-top: 20px;
+    cursor:pointer;
+}
+/* Галлерея */
+.gallery {
+    margin-top: 20px;
+}
+.gallery .slider .arrow_left {
+    background: url("../images/alb.png") no-repeat center center;
+    width:48px;
+    height:48px;
+    cursor:pointer;
+    padding-left: 20px;
+}
+.gallery .slider .arrow_right {
+    background: url("../images/arb.png") no-repeat center center;
+    width:48px;
+    height:48px;
+    cursor:pointer;
+    padding-right: 20px;
+}
+.gallery .slider {
+    display: flex;
+    justify-content: center; /*выравнивание по горизонтали*/
+    align-items:center; /*выравнивание по вертикали*/
+    background: #d9d9d7;
+    padding:5px 0 3px;
+    
+}
+footer {
+    margin-top:20px;
+}
+footer nav {
+    background: linear-gradient(#000,#52B6FF);
+    height:40px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+footer nav ul {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-basis:60%; /*Задает начальный размер элемента в контейнере flexbox. Если используется flex-direction: row; то flex-basis отвечает за ширину элемента, если используется flex-direction: column; то flex-basis отвечает за высоту элемента. Данное свойство имеет приоритет, если используется вместе с width и height свойствами.*/
+    height:100%;
+    padding:0;
+}
+footer nav ul li {
+    list-style-type: none; /*убирает маркировку*/
+    height:100%;
+    flex-basis:100%; /*Чтобы растянуть li*/
+}
+footer nav ul li a {
+    color:#000;
+    font-weight: bold;
+    text-decoration: none; /*убирает подчеркивание*/
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+}
+footer nav ul li a:hover {
+    background:#c9c9c9;
+}
+footer .titles {
+    background: #272727;
+    padding:10px 0;
+}
+footer .titles .links {
+    width:60%;
+    margin: 0 auto; /*выравнивание по середине, если это не flex-элемент*/
+    display: flex;
+    justify-content:space-around;
+}
+footer .titles .links div {
+    background: #3e3e3e;
+    padding:10px 0;
+    flex-basis:40%;
+    text-align: center;
+}
+
+.links a {
+    color:#dedede;
+    text-decoration: none;
+    display: block; 
+    font-size: 14px;
+    margin:5px 0
+}
+.links a:hover {
+    text-decoration: underline;
+}
+.links a:before {
+    content:"\00BB";
+    margin-right:10px;
+    color: #52B6FF;
+}
+footer p {
+    text-align: center;
+}
+
